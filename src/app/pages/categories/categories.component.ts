@@ -9,9 +9,10 @@ import { HttpService } from '../../services/http.service';
 })
 export class CategoriesComponent implements OnInit {
   categories: Observable<string[]>;
+
   constructor(public http: HttpService) {}
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.categories = this.http.getCategories();
   }
 }
