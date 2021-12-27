@@ -13,6 +13,7 @@ import {AppRoutingModule} from './app-routing.module';
 import { YearsComponent} from './pages/years/years.component';
 import {MovieInYearComponent} from './pages/years/movie-in-year/movie-in-year.component';
 import {HttpTestComponent} from './pages/http-test/http-test.component';
+import { AddMovieComponent } from './pages/add-movie/add-movie.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import {HttpTestComponent} from './pages/http-test/http-test.component';
     YearsComponent,
     MovieInYearComponent,
     HttpTestComponent,
+    AddMovieComponent,
   ],
   imports: [BrowserModule, HttpClientModule, AppRoutingModule],
   providers: [],
